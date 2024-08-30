@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <style>
+        /* Estilo geral do corpo da página */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0e0e0; 
+            margin: 0;
+            padding: 20px;
+            color: black; 
+        }
+
+        /* Estilo da barra de navegação */
+        nav {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        /* Estilo dos links na navegação, transformando-os em botões */
+        nav a {
+            display: inline-block;
+            margin: 0 15px;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: black;
+            background-color: #7fd4ee;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: transform 0.3s, background-color 0.3s; 
+        }
+
+        /* Estilo opcional para links */
+        a {
+            display: block;
+            margin: 10px 0;
+            padding: 10px;
+            text-decoration: none;
+            color: #000;
+            background-color: whitesmoke; 
+            border: 1px solid #333;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        /* Efeito de hover para links gerais */
+        a:hover {
+            background-color: #333;
+            color:white;
+        }
+
+        /* Efeito de hover nos botões de navegação */
+        nav a:hover {
+            background-color: #7fd4ee;
+            transform: scale(1.1); 
+        } 
+
+        /* Flexbox para a navegação */
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        /* Estilo da área principal de conteúdo */
+        main {
+            background-color: #7fd4ee;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+            color: black; 
+        }
+
+        /* Estilo do texto quando é selecionado */
+        main::selection {
+            background-color: #7fd4ee; 
+            color: black; 
+        }
+
+        /* Estilo do rodapé */
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 0.8em;
+            color: black;
+        }
+
+        /* Estilo do formulário */
+        .form-container {
+            width: 100%;
+            max-width: 93%; /* Largura máxima do formulário */
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        /* Abaixo estilos de títulos, tabelas e células */
+        h1 {
+            text-align: center;
+            color: black;
+            margin-bottom: 20px;
+        }
+        h2 {
+            text-align: center;
+            color: black;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-spacing: 0;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            width: 30%;
+            text-align: right;
+        }
+
+        td {
+            width: 70%;
+        }
+
+        /* Estilo dos campos de texto, e-mail e textarea */
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        /* Estilo dos botões */
+        button {
+            background-color: #7fd4ee;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        /* Efeito de hover nos botões */
+        button:hover {
+            background-color: #333;
+            color:white;
+        }
+
+        /* Estilo dos rótulos */
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Barra de navegação com links/botões -->
+    <nav>
+        <a href="index.html">Início </a>
+        <a href="page1.html">Quem sou </a>
+        <a href="page2.html">Minha Formação </a>
+        <a href="page3.html">Trabalhos anteriores </a>
+    </nav>
+
+    <!-- Conteúdo principal da página -->
+    <main>
+        <h1>Obrigado por visitar esta Página! </h1>
+
+
+        <!-- Formulário para deixar comentários -->
+        <div class="form-container">
+            <h2>Deixe seu Comentário abaixo:</h2>
+            <form action="#" method="post">
+                <table>
+                    <tr>
+                        <th><label for="nome">Nome:</label></th>
+                        <td><input type="text" name="nome" id="nome" required></td>
+                    </tr>
+                    <tr>
+                        <th><label for="email">E-mail:</label></th>
+                        <td><input type="email" name="email" id="email" required></td>
+                    </tr>
+                    <tr>
+                        <th><label for="msg">Digite sua mensagem:</label></th>
+                        <td><textarea name="msg" id="msg" rows="5" required>Digite sua mensagem</textarea></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><button type="submit">Enviar</button></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </main>
+
+    <!-- Rodapé da página marca fictícia que criei-->
+    <footer>
+        <p>&copy; 2024 A little piece of heaven</p>
+    </footer>
+
+</body>
+</html>

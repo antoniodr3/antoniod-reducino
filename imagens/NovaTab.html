@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova tabela de alunos</title>
+
+    <!-- adicionando alguns efeitos.-->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #ddd;
+            transform: scale(1.02);
+            transition: all 0.3s ease;
+        }
+
+        .highlight {
+            background-color: #ffeb3b;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabela de Alunos</h1>
+    <!-- populando a tabela -->
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Nota</th>
+                <th>Idade</th>
+                <th>Curso</th>
+                <th>Estado</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>João da Silva</td>
+                <td>8.5</td>
+                <td>21</td>
+                <td>Matemática</td>
+                <td>SP</td>
+            </tr>
+
+            <tr>
+                <td>Maria Oliveira</td>
+                <td>9.2</td>
+                <td>22</td>
+                <td>Física</td>
+                <td>RJ</td>
+            </tr>
+
+            <tr class="highlight">
+                <td>Carlos Souza</td>
+                <td>7.8</td>
+                <td>20</td>
+                <td>Química</td>
+                <td>MG</td>
+            </tr>
+
+            <tr>
+                <td>Ana Pereira</td>
+                <td>8.9</td>
+                <td>23</td>
+                <td>Biologia</td>
+                <td>RS</td>
+            </tr>
+            <tr>
+
+
+                <td>Felipe Costa</td>
+                <td>9.0</td>
+                <td>24</td>
+                <td>Engenharia</td>
+                <td>BA</td>
+           
+            </tr>
+       
+        </tbody>
+   
+    </table>
+</body>
+</html>

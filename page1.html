@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quem sou</title>
+    <style>
+        /* Estilo geral do corpo da página */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #808080; /* Fundo cinza */
+            margin: 0;
+            padding: 20px;
+            color: black; /* Texto na cor preta */
+        }
+
+        /* Estilo do cabeçalho */
+        header {
+            background-color: #90ee90;
+            color: rgb(15, 15, 15);
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        /* Estilo da barra de navegação */
+        nav {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        /* Estilo dos links na navegação, transformando-os em botões */
+        nav a {
+            display: inline-block;
+            margin: 0 15px;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: rgb(238, 234, 234);
+            background-color: #333;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: transform 0.3s, background-color 0.3s; 
+        }
+        
+        /* Estilo do contêiner das imagens */
+        .img-container {
+            display: flex; 
+            gap: 10px; 
+            justify-content: center; 
+            flex-wrap: nowrap; 
+        }
+
+        /* Estilo para imagens redondas responsivas */
+        .img-container img {
+            aspect-ratio: 1 / 1;
+            flex-basis: 30%; 
+            flex-grow: 1; 
+            min-width: 80px; 
+            border-radius: 50% / 30%; 
+            object-fit: cover; 
+            object-position: center; 
+            transition: flex-basis 0.3s ease; 
+        }
+
+        /* Estilo Flexbox para a navegação */
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        /* Efeito de hover nos botões de navegação */
+        nav a:hover {
+            background-color: #90ee90;
+            color: black;
+            transform: scale(1.1); 
+        }
+
+        /* Estilo da área principal */
+        main {
+            background-color: #90EE90; /* Verde claro para a caixa de texto */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+            color: black; 
+        }
+
+        /* Estilo do rodapé */
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 0.8em;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+    </header>
+
+    <!-- Barra de navegação com links/botões -->
+    <nav>
+        <a href="index.html">Inicio </a>
+        <a href="page2.html">Minha Formação </a>
+        <a href="page3.html">Trabalhos recentes </a>
+        <a href="page4.html">Contato </a>
+    </nav>
+
+    <!-- Conteúdo principal da página -->
+    <main>
+        <h2>Olá! Meu nome é Antonio D Reducino estou cursando Análise e desenvolvimento de sistemas pela Uninter, logo abaixo uma breve história sobre minha vida até aqui.</h2>
+
+        <p>Cresci numa pacata cidade do estado de São Paulo e tive uma infância comum para uma criança na década de 80. Comecei no meu primeiro emprego aos 15 e aos 18 servi no exército e lá permaneci por 30 meses, neste tempo passei por todo o aprendizado militar, no que se destaca minha primeira viagem internacional, à missão de paz no Haití. Vivenciar os sérios problemas daquele pais me ensinou a valorizar a vida tranquila e farta que levo aqui no Brasil.
+            Voltando para casa dei baixa no serviço militar e voltei a trabalhar no comércio, nos ultimos 11 anos até 2021 trabalhei em escritório e vivia soterrado atraz de pilhas de Notas fiscais, boletos, tributos e todas as mazélas do mundo administrativo.
+        </p>
+
+       
+        <!-- Contêiner para imagens -->
+        <div class="img-container">
+            <img src="imagens/soldado.jpeg" alt="soldado" title="soldado">
+            <img src="imagens/seta.jpeg" alt="seta" title="seta">
+            <img src="imagens/papelada.jpeg" alt="papelada" title="papelada">
+        </div>
+        
+
+
+        <p>
+            Com a chegada da pandemia em 2020 e com a "quebra" de milhares de empresas (incluisive a que eu trabalhava) decidi então vender tudo o que tinha em São Paulo e me "mandar" para o Mato grosso do Sul, um antigo sonho que partilhava com meu pai e que realizamos em 2022.
+            Hoje gosto de pescar, criar pássaros e plantar árvores frutíferas no quintal.
+            Os últimos 25 anos de trabalho me possibilitaram mudar de um provavél quadro de infarto aos 50 (por estress, má alimentação e sedentarismo ) para emagresser 20kilos em 2 anos apenas caminhando toda manhã, me alimentando corretamente e nada de estress.
+            E chegamos então á 2024, ano no qual estou cursando ADS, curso este que sempre tive interesse e que agora se fez possível para mim ingressar, estou gostando bastante até aqui... espero que siga assim até o final.
+
+        </p>
+
+            <!-- Contêiner para imagens -->
+        <div class="img-container">
+            <img src="imagens/piau.jpg" alt="peixe" title="peixe">
+            <img src="imagens/curio.jpg" alt="curió" title="curió">
+            <img src="imagens/limao.jpg" alt="limão" title="limão"> 
+
+    </main>
+
+    <!-- Rodapé da página marca fictícia que criei-->
+    <footer>
+        <p>&copy; 2024 A little piece of heaven</p>
+    </footer>
+
+</body>
+</html>
